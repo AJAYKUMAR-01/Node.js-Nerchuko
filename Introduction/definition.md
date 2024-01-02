@@ -4,7 +4,7 @@
 <p>But, ikkada problem vachesi JavaScript browser lo thappa bayata console lo run avvadhu.</p>
 
 <p>So, JavaScript program console lo run avvadaniki JavaScript Engine kavali like,</p>
-<code>Chrome</code> ----> <code>V8</code>
-<code>Fire Fox</code> ---> <code>Spider Monkey</code>
+<code>Chrome</code> ----> <code>V8</code><br>
+<code>Fire Fox</code> ---> <code>Spider Monkey</code><br>
 
 <p><code>Node JS</code> is an open-source and cross-platform runtime environment built on Chrome’s V8 JavaScript engine for executing JavaScript code outside of a browser.</p>
