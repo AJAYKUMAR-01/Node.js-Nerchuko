@@ -1,1 +1,2 @@
 <h2>what is Node.js ?</h2>
+<p><code>Node JS</code> is an open-source and cross-platform runtime environment built on Chrome’s V8 JavaScript engine for executing JavaScript code outside of a browser.</p>
