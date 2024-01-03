@@ -5,10 +5,11 @@
 
 <p>So, JavaScript program console lo run avvadaniki JavaScript Engine kavali like,</p>
 <code>Chrome uses V8 Engine </code><br>
-<code>Fire Fox uses Spider Monkey</code>
+<code>Fire Fox uses Spider Monkey Engine</code><br>
 
 <p><code>Node JS</code> is an open-source and cross-platform runtime environment built on Chrome’s V8 JavaScript engine for executing JavaScript code outside of a browser.</p>
 
-Node.js is often referred to as "cross-platform" because it can be executed on various operating systems, providing a consistent runtime environment for JavaScript outside of the web browser. 
+<code>Node.js</code> is often referred to as <b>cross-platform</b> because it can be executed on various operating systems, providing a consistent runtime environment for JavaScript outside of the web browser. 
 
+<p>So, Node.js nerchukovali anukuntey mundhu JavaScript occhi undali</p>
 Mi system lo node.js install chesukovali anukuntey <a href="https://nodejs.org/en/download">Click Here</a>
