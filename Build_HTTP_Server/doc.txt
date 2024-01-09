@@ -1,0 +1,9 @@
+first, mana folder lo package.json file install chesukovali.
+danikosam "npm init" aney command terminal lo run cheyyali.
+tharuvatha index.js anna file create cheyyali, which describes that it is an important file which describes it shoul be
+executed first to start the program[entry point].
+
+refer index.js file to create server.
+
+
+

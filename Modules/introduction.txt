@@ -1,0 +1,14 @@
+Manam production lo code ni chinna chinna modules ga divide cheshu untam kadha danni "Modular programming" antaru.
+
+Okay, ekkada enti antey production lo oka file matramey undadhu kadha. So, oka file lo unna functions verey file lo use cheyyalantey manam python, cpp lo ala aythey builtin modules import chesukuntamo alaney node.js lo kuda import chesukuntam. 
+
+Builtin Modules aythey direct ga import chesukuntam but self created files ni use cheyyalanteyh manam edythey fill vadalani anukuntamo aa file lo last line lo "module.exports = add".
+
+add is function name, if another module.exports = sub; this will over ride the before add function.
+
+for this purpose we export the functions as a object "{add, sub, ...<function name>}".
+
+To import the self created files we write " const obj = require('./<filename>') " 
+fork bulitin files "const obj = require("<module name>")"
+
+Also, multiple exports are also can be done . Learn it from google

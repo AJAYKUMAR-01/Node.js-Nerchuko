@@ -1,0 +1,51 @@
+"fs" is a builtin module in node which we use for file handling like creation, reading, writing, etc..
+fs -> file system
+
+to import fs we write 
+----------------------
+>> const fs = require('fs');
+
+To create a file
+-----------------
+>> fs.writeFile('./test.txt', "Hello, Ajay", (err) => {}) [Asynchronous file creation]
+>> fs.writeFileSync('./test.txt', "Hello, Ajay") [synchronous file creation] -> everytime creates a new file
+
+param mean
+-----------
+1. file name
+2. subject/content
+3. call back fun if error occurs [Async]
+
+To read a file
+--------------
+>> const data = fs.readFileSync("./<file name>", "utf-8") [readfilesync returns the data in the file]
+>> fs.readFile("./<file name>", "utf-8", (err, data) => {
+    if(err) console.log(err);
+    else {
+        console.log(data);
+    }
+});
+
+To append to file
+-------------------
+>> fs.appendFileSync("./<file name", "<content to be added"); [it does not over ride a file]
+.. useful for maaintaing a server request log to list the ip add. of clients 
+
+eg: fs.appendFileSync("./test.txt", new Date().getDate().toLocalString());
+    fs.appendFileSync("./test.txt", "hey! there");
+    fs.appendFileSync("./test.txt", `${Date.now()}`);
+
+To copy file
+--------------
+>> fs.cpSync('./test.txt', './copy.txt');
+
+To delete file
+---------------
+>> fs.unlinkSync("./test.txt") [file will be removed]
+
+To find the Status of a file
+---------------------------------
+>> console.log( fs.statSync("./test.txt") ) [details like time of creation, updation, size]
+
+>> console.log( fs.statSync("./test.txt").isFile() ) 
+... true 

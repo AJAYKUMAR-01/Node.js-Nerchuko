@@ -1,0 +1,25 @@
+Node.js Architecture
+
+let's start with the client
+
+-> client request for the server [node.js server]
+-> that request firstly stores in the "Event Queue" and,
+   
+   Request Types
+   --------------
+   1. Blocking Request
+   2. Non-Blocking Request
+
+-> if the request is blocking it reaches to "Thread Pool"
+-> Else it is instantly handled by the "Event Loop" .
+
+-> In thread pool each request is provided with 1 thread and after completion of task it seatle back in the
+   Thread pool.
+   The default size of the thread pool is 4 and can be extended up to 8. [depends]
+   To know the Thread of our Laptop
+   >> const os = require("os");
+   >> console.log(os.cpus().length) 
+   .... 8
+
+The os is a module that retrives the system data.
+   

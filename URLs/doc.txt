@@ -1,0 +1,26 @@
+https://google.com/
+
+https:// -->> "Protocol" which is a set of rules that the browser communicates with the server.
+
+google.com -->> "domain name" as we can't remember the IP address.
+
+                to know the IP add., Just Give "ping <domain_name>" in the cmd.
+
+/  -->> "Path"
+/contacts --->> "path"
+/about -->> "path"
+
+/about/1 --->> "Nested path"
+
+ -------> QUERY PARAMETERS <---------
+ It is the extra info. in the url which comes after the Question mark.
+
+ eg: https://google.com/about?userId=1&a=2
+     https://youtube.com/search?search_query=Animal+songs+
+
+hmm, Now the http package cannot find what were the queries and the path[URL resolution and parsing aren't possible].
+So, we install external module called "url", using "npm i url".   
+
+Afterthat, you can find the dependencies section in the package.json file consists the "url" object with the installed 
+version.
+
