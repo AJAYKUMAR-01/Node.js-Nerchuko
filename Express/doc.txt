@@ -1,0 +1,15 @@
+Before moving into the Express, Let's discuss about the problems 
+
+-> There is only one handling function and total code in it.
+-> The handling function is bit confusing.
+-> Need to install external libraries like "url", etc..
+-> everything should be handled by the developer itself from the scratch.
+
+-----------------------------------> Express <-----------------------------------------------
+-> Fast, unopinionated, minimalist web framework for node.js
+-> Clean code
+-> handles routes very easily.
+
+
+
+

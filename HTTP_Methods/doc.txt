@@ -1,0 +1,38 @@
+HTTP Methods
+------------
+1. GET
+2. POST
+3. PUT
+4. PATCH
+5. DELETE
+
+1.GET 
+-----
+Get is used when we want to get some data from the server, browser by default creates a get request 
+after url is entered.
+
+eg: Youtube gives us the videos according to the request made.
+
+2.POST
+------
+POST is used to send and mutate some data in server.
+eg: Signup forms, feedback forms.
+
+same as posting on in the social media.
+receiving this "POST" request means the server query's the database to add the data.[sometimes]
+
+3.PUT 
+------
+PUT is used to put into the server.
+eg: Placeing some file in the data, image, video, audia.
+
+4. PATCH
+----------
+PATCH is used to change the existing data in the server.
+
+5.DELETE
+--------
+DELETE is used to delete the data in the server.
+
+
+And, Most commonly GET, POST are used. 

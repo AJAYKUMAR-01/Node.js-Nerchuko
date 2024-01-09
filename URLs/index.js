@@ -6,18 +6,49 @@ const fs = require('fs');
 const url = require('url');
 
 const myServer = http.createServer((req, res) => {
+    if(req.url === "/favicon.ico") res.end();
     const log = `${Date.now()}: ${req.url}: New request received\n`;
+    const myUrl = url.parse(req.url, true);
+    console.log(myUrl);
     fs.appendFile("log.txt", log, (err, data) => {
-        switch(req.url)
+        switch(myUrl.path)
         {
             case "/about": res.end("My Name is Ajay Kumar");
+                break;
             case "/": res.end("This is a Home page");
-            case "/contact": req.end("Gmail: ajaykumarnandivada@gmail.com");
-            default: req.end("404 Page Not Found");
+                break;
+            case "/search": 
+                const name = myUrl.query.name;
+                res.end(`Hi, ${name}`);
+                break;
+            case "/contact": 
+            {
+                res.end("Gmail: ajaykumarnandivada@gmail.com");
+                break;
+            }
+            default: res.end("404");
         }
     })
 });
 
-myServer.listen(3000, () => console.log("server created successfully"));
+myServer.listen(8000, () => console.log("server created successfully"));
+
+//Url: http://localhost:3000/about?name=ajay
+
+// Output :
+// Url {
+//     protocol: null,
+//     slashes: null,
+//     auth: null,
+//     host: null,
+//     port: null,
+//     hostname: null,
+//     hash: null,
+//     search: '?name=ajay',
+//     query: 'name=ajay',
+//     pathname: '/about',
+//     path: '/about?name=ajay',
+//     href: '/about?name=ajay'
+//   }
 
 
