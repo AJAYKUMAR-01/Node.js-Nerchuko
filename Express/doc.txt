@@ -9,6 +9,14 @@ Before moving into the Express, Let's discuss about the problems
 -> Fast, unopinionated, minimalist web framework for node.js
 -> Clean code
 -> handles routes very easily.
+-> Visit https://expressjs.com website for more info.
+Basic Routing 
+---------------
+app.METHOD(PATH, HANDLER);
+app -> instance of the express.
+METHOD -> http request methods in lowercase
+PATH -> path of the server
+HANDLER -> The function which need to be executed when path matches 
 
 
 
