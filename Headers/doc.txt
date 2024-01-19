@@ -1,0 +1,18 @@
+            Http Headers 
+           --------------
+-> suppose a letter is sent from person A to person B.
+-> The address like from, to, weight are the headers and inside the envelop is data.
+-> finally, letter is the request.
+
+letter       client-server
+------       -------------
+From         From IP
+To           To IP
+weight       Content Type : eg: JSON
+
+Definition: HTTP Headers are an important part of the API request and response as they represent the meta-data 
+            associated with the API request and response.
+-> Headers carry the information for the request and response  body.
+
+refer REST_API/index.js 
+Builtin Headers ---> refer flaviocopes.com website

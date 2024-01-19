@@ -1,0 +1,27 @@
+MongoDB
+-------
+-> No-sql Document based database[sql -> table based]
+-> strong support for aggregation pipelines
+-> works on BSON format
+-> Best for Node applications
+
+Architecture
+----------------
+-> sql database lo ala aythey tables untayo, mongoDB lo collections untayi.
+eg: collections = 'users'
+
+-> Oka collection lo no. of documents untayi
+
+Installation: refer some Youtube Video
+
+Connecting MongoDB with Node.js
+--------------------------------
+-> Make sure your mongodb is running [else run mongosh command on cmd]
+-> we need mongoose package to work with mongoDB .
+
+-> Schema - define a structure
+       schema - Model
+       Model - used to perform CRUD operations
+    
+
+    Refer REST_API
